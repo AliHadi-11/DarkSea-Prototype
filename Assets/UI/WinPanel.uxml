@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="WinPanel.uss" />
+    <ui:VisualElement name="win-overlay" class="win-overlay">
+        <ui:VisualElement name="win-card" class="win-card">
+
+            <ui:Label name="title-label" text="LEVEL COMPLETE!" class="win-title" />
+
+            <ui:VisualElement class="win-divider" />
+
+            <ui:VisualElement class="stats-container">
+
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="PLAYER" class="stat-key" picking-mode="Ignore" />
+                    <ui:Label name="player-name-value" text="---" class="stat-value" picking-mode="Ignore" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="SCORE" class="stat-key" picking-mode="Ignore" />
+                    <ui:Label name="score-value" text="0" class="stat-value stat-highlight" picking-mode="Ignore" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="OXYGEN REMAINING" class="stat-key" picking-mode="Ignore" />
+                    <ui:Label name="oxygen-value" text="0%" class="stat-value" picking-mode="Ignore" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+            <ui:VisualElement class="win-divider" />
+
+            <ui:VisualElement class="button-row">
+                <ui:Button name="btn-next" class="win-button win-button-primary">
+                    <ui:Label text="NEXT LEVEL" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="btn-retry" class="win-button">
+                    <ui:Label text="RETRY" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="btn-menu" class="win-button">
+                    <ui:Label text="MAIN MENU" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

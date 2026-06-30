@@ -1,0 +1,157 @@
+/* ===================================================
+   Dark Sea — Advanced HUD
+   =================================================== */
+
+/* ── Camera POV toggle ── */
+.pov-container {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+
+.pov-button {
+    background-color: rgba(11, 18, 14, 0.82);
+    border-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-color: rgba(58, 90, 68, 0.45);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 14px;
+}
+
+.pov-button:hover {
+    background-color: rgba(16, 26, 20, 0.75);
+    border-color: rgba(88, 132, 100, 0.6);
+}
+
+.pov-label {
+    font-size: 10px;
+    color: rgba(160, 185, 205, 0.75);
+    letter-spacing: 2px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+/* Full-screen transparent overlay */
+.hud-root {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+}
+
+/* ── Panel shell ── */
+.hud-panel {
+    background-color: rgba(11, 18, 14, 0.88);
+    border-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 2px;
+    border-color: rgba(52, 80, 60, 0.35);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* ── Panel header row ── */
+.hud-header-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hud-header-icon {
+    font-size: 16px;
+    color: rgb(140, 175, 205);
+    -unity-font-style: bold;
+    margin-right: 8px;
+    -unity-text-align: middle-center;
+}
+
+.hud-header-label {
+    font-size: 9px;
+    color: rgba(140, 165, 190, 0.6);
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+}
+
+/* ══════════════════════════════════════════
+   OXYGEN PANEL
+   ══════════════════════════════════════════ */
+
+.oxygen-panel { width: 250px; }
+
+.oxygen-bar-bg {
+    height: 5px;
+    background-color: rgba(8, 13, 10, 0.95);
+    border-radius: 0;
+    border-width: 0;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.oxygen-bar-fill {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(56, 178, 155);
+    transition-property: width, background-color, opacity;
+    transition-duration: 0.25s, 0.45s, 0.25s;
+}
+
+.oxygen-fill-mid      { background-color: rgb(214, 158, 46); }
+.oxygen-fill-low      { background-color: rgb(200, 70, 70);  }
+.oxygen-fill-critical { background-color: rgb(210, 50, 50);  }
+.oxygen-fill-pulse-dim { opacity: 0.18; }
+
+.oxygen-pct-label {
+    font-size: 24px;
+    color: rgb(200, 215, 228);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.oxygen-pct-low { color: rgb(210, 70, 70); }
+
+/* ══════════════════════════════════════════
+   SONAR PANEL
+   ══════════════════════════════════════════ */
+
+.sonar-panel {
+    width: 186px;
+    align-items: center;
+}
+
+.sonar-radar-container {
+    width:  150px;
+    height: 150px;
+    border-radius: 75px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: rgba(52, 85, 64, 0.35);
+    background-color: rgba(6, 10, 8, 0.96);
+    margin-bottom: 9px;
+}
+
+.sonar-log-label {
+    font-size: 10px;
+    color: rgba(140, 170, 195, 0.6);
+    letter-spacing: 1px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}

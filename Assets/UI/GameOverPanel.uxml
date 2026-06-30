@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="GameOverPanel.uss" />
+    <ui:VisualElement name="gameover-overlay" class="gameover-overlay">
+        <ui:VisualElement name="gameover-card" class="gameover-card">
+
+            <ui:Label text="GAME OVER" class="gameover-title" />
+
+            <ui:VisualElement class="gameover-divider" />
+
+            <ui:Label name="reason-label" text="" class="reason-label" />
+
+            <ui:VisualElement class="gameover-divider" />
+
+            <ui:VisualElement class="button-row">
+                <ui:Button name="btn-restart" class="gameover-button gameover-button-primary">
+                    <ui:Label text="RESTART" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="btn-menu" class="gameover-button">
+                    <ui:Label text="MAIN MENU" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

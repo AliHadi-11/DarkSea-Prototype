@@ -1,0 +1,92 @@
+/* Top-center notification stack — clips slide-down animation */
+.notif-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Base card — starts above screen, invisible; slides down on .notif-show */
+.notif-card {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(8, 18, 32, 0.93);
+    border-radius: 0 0 8px 8px;
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 4px;
+    border-left-width: 1px;
+    border-right-color: rgba(56, 90, 130, 0.35);
+    border-left-color: rgba(56, 90, 130, 0.35);
+    border-bottom-color: rgb(56, 90, 130);
+    padding: 10px 22px;
+    margin-bottom: 6px;
+    margin-top: -80px;
+    width: 360px;
+    opacity: 0;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.35s, 0.35s;
+    transition-timing-function: ease-out, ease-out;
+}
+
+/* Animate in: drop from top + fade */
+.notif-show {
+    opacity: 1;
+    margin-top: 0;
+}
+
+/* Colored dot accent */
+.notif-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+    background-color: rgb(56, 90, 130);
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+/* Main message text */
+.notif-text {
+    font-size: 13px;
+    color: rgb(225, 225, 225);
+    -unity-font-style: bold;
+    white-space: normal;
+    flex: 1;
+    letter-spacing: 2px;
+    -unity-text-align: middle-left;
+}
+
+/* ── Kill (green) ── */
+.notif-kill {
+    border-bottom-color: rgb(93, 202, 120);
+}
+.notif-kill .notif-dot {
+    background-color: rgb(93, 202, 120);
+}
+.notif-kill .notif-text {
+    color: rgb(200, 240, 210);
+}
+
+/* ── Danger (red) ── */
+.notif-danger {
+    border-bottom-color: rgb(220, 50, 50);
+}
+.notif-danger .notif-dot {
+    background-color: rgb(220, 50, 50);
+}
+.notif-danger .notif-text {
+    color: rgb(240, 200, 200);
+}
+
+/* ── Warning (orange) ── */
+.notif-warning {
+    border-bottom-color: rgb(232, 115, 26);
+}
+.notif-warning .notif-dot {
+    background-color: rgb(232, 115, 26);
+}
+.notif-warning .notif-text {
+    color: rgb(240, 220, 190);
+}

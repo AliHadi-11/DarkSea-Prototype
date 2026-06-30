@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="LevelSelect.uss" />
+    <ui:VisualElement name="root" class="root">
+
+        <ui:VisualElement class="title-row">
+            <ui:Label text="DARK SEA: " class="title title-orange" />
+            <ui:Label text="SURVIVAL"   class="title title-white"  />
+        </ui:VisualElement>
+
+        <ui:Label text="LEVEL SELECT" class="subtitle" />
+
+        <ui:VisualElement name="level-container" class="level-container">
+
+            <ui:Button name="btn-level-1" class="level-button">
+                <ui:Label text="LEVEL 1" class="level-name" picking-mode="Ignore" />
+                <ui:Label name="status-level-1" text="---" class="level-status" picking-mode="Ignore" />
+            </ui:Button>
+
+            <ui:Button name="btn-level-2" class="level-button">
+                <ui:Label text="LEVEL 2" class="level-name" picking-mode="Ignore" />
+                <ui:Label name="status-level-2" text="---" class="level-status" picking-mode="Ignore" />
+            </ui:Button>
+
+            <ui:Button name="btn-level-3" class="level-button">
+                <ui:Label text="LEVEL 3" class="level-name" picking-mode="Ignore" />
+                <ui:Label name="status-level-3" text="---" class="level-status" picking-mode="Ignore" />
+            </ui:Button>
+
+        </ui:VisualElement>
+
+        <ui:Button name="btn-back" class="back-button">
+            <ui:Label text="BACK" class="back-label" picking-mode="Ignore" />
+        </ui:Button>
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="NotificationPanel.uss" />
+    <ui:VisualElement name="notif-container" class="notif-container" picking-mode="Ignore" />
+</ui:UXML>

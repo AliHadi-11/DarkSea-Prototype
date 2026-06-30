@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="AuthPanel.uss" />
+    <ui:VisualElement name="auth-root" class="auth-root">
+        <ui:VisualElement name="auth-card" class="auth-card">
+
+            <!-- Game title -->
+            <ui:VisualElement class="title-row">
+                <ui:Label text="DARK SEA: " class="brand-title brand-orange" />
+                <ui:Label text="SURVIVAL"   class="brand-title brand-white"  />
+            </ui:VisualElement>
+
+            <!-- Tab strip -->
+            <ui:VisualElement name="tab-strip" class="tab-strip">
+                <ui:Button name="tab-register" class="tab tab-active">
+                    <ui:Label text="REGISTER" class="tab-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="tab-login" class="tab">
+                    <ui:Label text="LOGIN" class="tab-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <!-- Username -->
+            <ui:Label text="USERNAME" class="field-label" />
+            <ui:TextField name="input-username" label="" class="auth-field" />
+
+            <!-- Password -->
+            <ui:Label text="PASSWORD" class="field-label" />
+            <ui:TextField name="input-password" label="" class="auth-field" />
+
+            <!-- Confirm Password (Register only, hidden on Login) -->
+            <ui:Label name="label-confirm" text="CONFIRM PASSWORD" class="field-label" />
+            <ui:TextField name="input-confirm" label="" class="auth-field" />
+
+            <!-- Feedback -->
+            <ui:Label name="feedback-label" text="" class="feedback-label" />
+
+            <!-- Submit -->
+            <ui:Button name="btn-submit" class="btn-submit">
+                <ui:Label name="submit-label" text="CREATE ACCOUNT" class="submit-label" picking-mode="Ignore" />
+            </ui:Button>
+
+            <!-- Forgot Password (Login tab only) -->
+            <ui:Button name="btn-forgot" class="btn-forgot">
+                <ui:Label text="FORGOT PASSWORD?" class="forgot-label" picking-mode="Ignore" />
+            </ui:Button>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

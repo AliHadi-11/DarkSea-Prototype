@@ -1,0 +1,108 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement name="root" class="root">
+
+        <!-- Branding -->
+        <ui:VisualElement class="brand-row">
+            <ui:Label text="DARK SEA: " class="brand-title brand-orange" />
+            <ui:Label text="SURVIVAL"   class="brand-title brand-white"  />
+        </ui:VisualElement>
+
+        <!-- Welcome label (populated by C# with the player's name) -->
+        <ui:Label name="welcome-label" text="" class="welcome-label" />
+
+        <!-- Main nav buttons -->
+        <ui:VisualElement name="button-container" class="button-container">
+
+            <ui:Button name="btn-play" class="menu-button menu-button-primary">
+                <ui:Label text="&#x25BA;" class="btn-icon" picking-mode="Ignore" />
+                <ui:Label text="PLAY"     class="btn-label" picking-mode="Ignore" />
+            </ui:Button>
+
+            <ui:Button name="btn-settings" class="menu-button">
+                <ui:Label text="&#x2699;" class="btn-icon" picking-mode="Ignore" />
+                <ui:Label text="SETTINGS" class="btn-label" picking-mode="Ignore" />
+            </ui:Button>
+
+            <ui:Button name="btn-achievements" class="menu-button">
+                <ui:Label text="&#x2605;" class="btn-icon"  picking-mode="Ignore" />
+                <ui:Label text="SCORES"   class="btn-label" picking-mode="Ignore" />
+            </ui:Button>
+
+            <ui:Button name="btn-exit" class="menu-button">
+                <ui:Label text="&#x2715;" class="btn-icon"  picking-mode="Ignore" />
+                <ui:Label text="EXIT"     class="btn-label" picking-mode="Ignore" />
+            </ui:Button>
+
+        </ui:VisualElement>
+
+        <!-- ═══════════════════════════════════════════════════
+             Scores overlay
+             ═══════════════════════════════════════════════════ -->
+        <ui:VisualElement name="scores-panel" class="scores-overlay">
+            <ui:VisualElement class="scores-card">
+                <ui:Label text="RECENT SCORES" class="scores-title" />
+                <ui:VisualElement name="scores-list" class="scores-list" />
+                <ui:Button name="btn-close-scores" class="btn-close-scores">
+                    <ui:Label text="CLOSE" class="confirm-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- ═══════════════════════════════════════════════════
+             Settings overlay — Name, Age, POV preference
+             ═══════════════════════════════════════════════════ -->
+        <ui:VisualElement name="settings-panel" class="settings-overlay">
+            <ui:VisualElement class="settings-card">
+
+                <ui:Label text="PLAYER SETTINGS" class="settings-title" />
+                <ui:VisualElement class="settings-divider" />
+
+                <ui:Label text="PLAYER NAME" class="settings-field-label" />
+                <ui:TextField name="settings-name" label="" class="settings-field" />
+
+                <ui:Label text="AGE" class="settings-field-label" />
+                <ui:TextField name="settings-age" label="" class="settings-field" />
+
+                <ui:Label text="CAMERA VIEW" class="settings-field-label" />
+                <ui:VisualElement class="settings-pov-row">
+                    <ui:Button name="btn-pov-fp" class="settings-pov-btn">
+                        <ui:Label text="1ST PERSON" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="btn-pov-tp" class="settings-pov-btn">
+                        <ui:Label text="3RD PERSON" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+
+                <ui:Label text="DIFFICULTY" class="settings-field-label" />
+                <ui:VisualElement class="settings-pov-row">
+                    <ui:Button name="btn-diff-easy"   class="settings-pov-btn"><ui:Label text="EASY"   picking-mode="Ignore" /></ui:Button>
+                    <ui:Button name="btn-diff-normal" class="settings-pov-btn"><ui:Label text="NORMAL" picking-mode="Ignore" /></ui:Button>
+                    <ui:Button name="btn-diff-hard"   class="settings-pov-btn"><ui:Label text="HARD"   picking-mode="Ignore" /></ui:Button>
+                </ui:VisualElement>
+
+                <ui:Label text="DISPLAY" class="settings-field-label" />
+                <ui:VisualElement class="settings-pov-row">
+                    <ui:Button name="btn-fullscreen" class="settings-pov-btn"><ui:Label text="FULLSCREEN" picking-mode="Ignore" /></ui:Button>
+                    <ui:Button name="btn-windowed"   class="settings-pov-btn"><ui:Label text="WINDOWED"   picking-mode="Ignore" /></ui:Button>
+                </ui:VisualElement>
+
+                <ui:Label name="settings-feedback" text="" class="settings-feedback" />
+
+                <ui:VisualElement class="settings-btn-row">
+                    <ui:Button name="btn-settings-save" class="btn-settings-save">
+                        <ui:Label text="SAVE" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="btn-settings-close" class="btn-settings-close">
+                        <ui:Label text="CLOSE" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Legacy name-prompt — hidden, replaced by Settings -->
+        <ui:VisualElement name="name-prompt" class="name-overlay" style="display: none;" />
+
+    </ui:VisualElement>
+</ui:UXML>

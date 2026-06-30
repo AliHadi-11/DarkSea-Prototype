@@ -1,0 +1,95 @@
+/* Full-screen overlay — hidden by default via C# */
+.gameover-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.88);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered card */
+.gameover-card {
+    background-color: rgb(10, 22, 37);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(120, 30, 30);
+    padding: 40px 50px;
+    min-width: 380px;
+    align-items: center;
+}
+
+/* Fixed "GAME OVER" header — deep red */
+.gameover-title {
+    font-size: 36px;
+    color: rgb(220, 50, 50);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 16px;
+    letter-spacing: 3px;
+}
+
+/* Horizontal rule */
+.gameover-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(120, 30, 30);
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+/* Dynamic reason text — muted, smaller */
+.reason-label {
+    font-size: 14px;
+    color: rgb(200, 160, 160);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    margin-bottom: 4px;
+}
+
+/* Button row */
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+/* Base button */
+.gameover-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 23, 42);
+    border-radius: 6px;
+    border-width: 0;
+    padding: 11px 22px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 13px;
+    -unity-font-style: bold;
+}
+
+.gameover-button:hover {
+    background-color: rgb(220, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.gameover-button:active {
+    background-color: rgb(160, 30, 30);
+    color: rgb(255, 255, 255);
+}
+
+/* Primary / Restart — red by default */
+.gameover-button-primary {
+    background-color: rgb(220, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.gameover-button-primary:hover {
+    background-color: rgb(240, 80, 80);
+}
+
+.gameover-button-primary:active {
+    background-color: rgb(160, 30, 30);
+}

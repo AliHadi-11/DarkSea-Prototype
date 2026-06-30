@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="PausePanel.uss" />
+    <ui:VisualElement name="pause-overlay" class="pause-overlay">
+        <ui:VisualElement name="pause-card" class="pause-card">
+
+            <ui:Label text="PAUSED" class="pause-title" />
+
+            <ui:VisualElement class="pause-divider" />
+
+            <ui:Button name="btn-resume" class="pause-button pause-button-primary">
+                <ui:Label text="RESUME" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="btn-restart" class="pause-button">
+                <ui:Label text="RESTART" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="btn-menu" class="pause-button">
+                <ui:Label text="MAIN MENU" picking-mode="Ignore" />
+            </ui:Button>
+
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

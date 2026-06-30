@@ -1,0 +1,79 @@
+/* Full-screen dark overlay — hidden by default via C# */
+.pause-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered card */
+.pause-card {
+    background-color: rgb(10, 22, 37);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(56, 90, 130);
+    padding: 40px 50px;
+    min-width: 320px;
+    align-items: center;
+}
+
+/* Title */
+.pause-title {
+    font-size: 34px;
+    color: rgb(232, 115, 26);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 16px;
+    letter-spacing: 4px;
+}
+
+/* Horizontal rule */
+.pause-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(56, 90, 130);
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+/* Shared button — full width, stacked vertically */
+.pause-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(15, 23, 42);
+    border-radius: 6px;
+    border-width: 0;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    width: 220px;
+    font-size: 13px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.pause-button:hover {
+    background-color: rgb(232, 115, 26);
+    color: rgb(255, 255, 255);
+}
+
+.pause-button:active {
+    background-color: rgb(180, 87, 15);
+    color: rgb(255, 255, 255);
+}
+
+/* Primary / Resume — orange by default */
+.pause-button-primary {
+    background-color: rgb(232, 115, 26);
+    color: rgb(255, 255, 255);
+}
+
+.pause-button-primary:hover {
+    background-color: rgb(255, 145, 50);
+}
+
+.pause-button-primary:active {
+    background-color: rgb(180, 87, 15);
+}

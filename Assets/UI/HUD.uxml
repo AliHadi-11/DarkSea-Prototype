@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="HUD.uss" />
+    <ui:VisualElement name="hud-root" class="hud-root" picking-mode="Ignore">
+
+        <!-- ── Camera POV toggle (top-center, clickable) ── -->
+        <ui:VisualElement class="pov-container">
+            <ui:Button name="btn-pov" class="pov-button" picking-mode="Position">
+                <ui:Label text="[ V ]  1ST PERSON" class="pov-label" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <!-- ── Oxygen Panel (bottom-left) ── -->
+        <ui:VisualElement name="oxygen-panel" class="hud-panel oxygen-panel">
+            <ui:VisualElement class="hud-header-row">
+                <ui:Label text="O₂" class="hud-header-icon" />
+                <ui:Label text="OXYGEN LEVEL" class="hud-header-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="oxygen-bar-bg" class="oxygen-bar-bg">
+                <ui:VisualElement name="oxygen-bar-fill" class="oxygen-bar-fill" />
+            </ui:VisualElement>
+            <ui:Label name="oxygen-pct" text="100%" class="oxygen-pct-label" />
+        </ui:VisualElement>
+
+        <!-- ── Sonar Panel (bottom-right) ── -->
+        <ui:VisualElement name="sonar-panel" class="hud-panel sonar-panel">
+            <ui:VisualElement class="hud-header-row">
+                <ui:Label text="◉" class="hud-header-icon" />
+                <ui:Label text="SONAR" class="hud-header-label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="sonar-radar-container" class="sonar-radar-container" />
+            <ui:Label name="sonar-log" text="PRESS [SPACE] TO PING" class="sonar-log-label" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

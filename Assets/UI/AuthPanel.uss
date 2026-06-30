@@ -1,0 +1,189 @@
+/* =====================================================
+   Dark Sea — Auth Panel (Register / Login)
+   ===================================================== */
+
+.auth-root {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 12, 10);
+}
+
+/* ── Card ── */
+.auth-card {
+    width: 400px;
+    background-color: rgb(11, 18, 14);
+    border-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 3px;
+    border-color: rgb(190, 100, 24);
+    padding-top: 32px;
+    padding-bottom: 36px;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: stretch;
+}
+
+/* ── Branding ── */
+.title-row {
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 28px;
+}
+
+.brand-title {
+    font-size: 26px;
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+}
+
+.brand-orange { color: rgb(195, 102, 24); }
+.brand-white  { color: rgb(175, 192, 180); }
+
+/* ── Tab strip ── */
+.tab-strip {
+    flex-direction: row;
+    margin-bottom: 24px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(38, 58, 44, 0.6);
+}
+
+.tab {
+    flex: 1;
+    background-color: rgba(0,0,0,0);
+    background-image: none;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0,0,0,0);
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-property: border-bottom-color;
+    transition-duration: 0.12s;
+}
+
+.tab:hover { background-color: rgba(18, 28, 22, 0.6); }
+
+.tab-active {
+    border-bottom-color: rgb(190, 100, 24);
+}
+
+.tab-label {
+    font-size: 11px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    color: rgb(68, 95, 76);
+    -unity-text-align: middle-center;
+}
+
+.tab-active .tab-label {
+    color: rgb(175, 192, 180);
+}
+
+/* ── Field labels ── */
+.field-label {
+    font-size: 10px;
+    color: rgb(72, 98, 78);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+/* ── TextField wrapper ── */
+.auth-field {
+    margin-bottom: 8px;
+}
+
+.auth-field > .unity-base-field__label {
+    display: none;
+}
+
+.auth-field > .unity-base-field__input {
+    background-color: rgb(7, 12, 10);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-color: rgba(58, 88, 66, 0.65);
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: rgb(185, 200, 186);
+    font-size: 14px;
+    -unity-text-align: middle-left;
+}
+
+.auth-field > .unity-base-field__input:focus {
+    border-color: rgb(190, 100, 24);
+}
+
+/* ── Feedback ── */
+.feedback-label {
+    font-size: 11px;
+    -unity-font-style: normal;
+    min-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    -unity-text-align: middle-left;
+    white-space: normal;
+}
+
+.feedback-error   { color: rgb(175, 58, 48);  }
+.feedback-success { color: rgb(78, 148, 100); }
+.feedback-loading { color: rgb(72, 135, 165); }
+
+/* ── Submit button ── */
+.btn-submit {
+    background-color: rgb(190, 100, 24);
+    background-image: none;
+    border-width: 0;
+    border-radius: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 8px;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+.btn-submit:hover  { background-color: rgb(215, 122, 38); }
+.btn-submit:active { background-color: rgb(155, 80, 16); }
+
+.submit-label {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: rgb(22, 30, 22);
+    letter-spacing: 1px;
+    -unity-text-align: middle-center;
+}
+
+/* ── Forgot Password ── */
+.btn-forgot {
+    background-color: rgba(0,0,0,0);
+    background-image: none;
+    border-width: 0;
+    border-radius: 0;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    align-self: center;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+}
+
+.btn-forgot:hover  { opacity: 0.75; }
+.btn-forgot:active { opacity: 0.5; }
+
+.forgot-label {
+    font-size: 10px;
+    -unity-font-style: bold;
+    color: rgb(190, 100, 24);
+    letter-spacing: 2px;
+    -unity-text-align: middle-center;
+}
+
+.feedback-reveal { color: rgb(78, 200, 140); }

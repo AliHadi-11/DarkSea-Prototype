@@ -1,0 +1,40 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity cache
+*.pidb
+*.unityproj
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# OS generated
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+
+# Build outputs on Desktop
+DarkSea_WebGL_Build/
+DarkSea_Windows_Build/
+
+# Large auto-generated files
+sysinfo.txt
+crashlytics-build.properties

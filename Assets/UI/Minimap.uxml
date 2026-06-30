@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="Minimap.uss" />
+    <ui:VisualElement name="minimap-root" class="minimap-root" picking-mode="Ignore">
+        <ui:VisualElement name="minimap-view" class="minimap-view">
+            <ui:VisualElement name="sonar-ring" class="sonar-ring" />
+            <ui:VisualElement name="player-arrow" class="player-arrow" />
+        </ui:VisualElement>
+        <ui:Label text="MAP" class="minimap-label" />
+    </ui:VisualElement>
+</ui:UXML>

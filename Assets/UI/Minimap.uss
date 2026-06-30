@@ -1,0 +1,73 @@
+/* ===================================================
+   Dark Sea — Minimap
+   =================================================== */
+
+.minimap-root {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.minimap-view {
+    width: 190px;
+    height: 190px;
+    border-radius: 95px;
+    overflow: hidden;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: rgba(52, 85, 64, 0.35);
+    background-color: rgba(6, 10, 8, 0.96);
+}
+
+/* Sonar ripple — driven from C# on ping */
+.sonar-ring {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 90px;
+    top: 90px;
+    border-radius: 5px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: rgba(80, 195, 145, 0.85);
+    background-color: rgba(80, 195, 145, 0.04);
+    opacity: 0;
+}
+
+/* Player arrow — Painter2D triangle, centered */
+.player-arrow {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 88px;
+    top: 88px;
+}
+
+/* Enemy blip */
+.enemy-blip {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(210, 60, 60, 0.9);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: rgba(230, 110, 110, 0.45);
+}
+
+.minimap-label {
+    font-size: 8px;
+    color: rgba(130, 160, 185, 0.45);
+    letter-spacing: 2px;
+    margin-top: 5px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
