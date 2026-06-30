@@ -1,3 +1,7 @@
+# Claude AI & MCP config (local only)
+.claude/
+.mcp.json
+
 # Unity generated folders
 [Ll]ibrary/
 [Tt]emp/
