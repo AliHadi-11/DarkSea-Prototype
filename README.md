@@ -31,8 +31,6 @@
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [How to Run Locally](#-how-to-run-locally)
-- [Competitors Analysis](#-competitors-analysis)
-
 ---
 
 ## 🎯 About the Project
@@ -190,19 +188,6 @@ git clone https://github.com/AliHadi-11/DarkSea-Prototype.git
 4. Open the project
 5. Load `Assets/Scenes/RegisterScene.unity`
 6. Press **Play**
-
----
-
-## 🔍 Competitors Analysis
-
-| Feature | **Dark Sea** | Perception | BlindSide | The Vale |
-|---|---|---|---|---|
-| Visual Dependency | ✅ **0%** | ❌ High | ✅ 0% | ✅ 0% |
-| Enemy AI Logic | ✅ **Voice Mimicry** | Standard | Basic | Scripted |
-| Oxygen System | ✅ **Yes** | ❌ None | ❌ None | ❌ None |
-| 3-Level Campaign | ✅ **Yes** | Story chapters | Wave-based | Open world |
-| Desktop Grade | ✅ **Yes** | ✅ Yes | ❌ Mobile | ✅ Yes |
-| Equally Accessible | ✅ **Yes** | ❌ No | ✅ Yes | ✅ Yes |
 
 ---
 
