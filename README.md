@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="screenshots/image4.png" alt="Dark Sea Banner" width="600"/>
+<img src="screenshots/darksea.png" alt="Dark Sea Banner" width="600"/>
 
 # 🌊 DARK SEA
 ### Audio-Based Survival Horror Game
